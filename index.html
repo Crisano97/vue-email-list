@@ -20,9 +20,12 @@
 <body>
 
     <div id="app">
-        <ul >
-            <li v-for="email in emails">{{ email }}</li>
-        </ul>
+        <div class="container w-50 mt-5  text-center">
+            <h1 class="fw-bold">Email List</h1>
+            <ul class="list-group">
+                <li class="list-group-item" v-if="emails.length == 10" v-for="email in emails">{{ email }}</li>
+            </ul>
+        </div>
 
     </div>
 
